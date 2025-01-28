@@ -107,8 +107,9 @@ header {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
-    background-color: rgb(148, 145, 145);
     border-radius: 10px;
+    background-color: #f5f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.175);
 }
 
 .book-content h2 {
@@ -156,11 +157,18 @@ header {
     margin: 50px auto;
     padding: 20px;
     max-width: 80%;
-    background-color: var(--accent1-color);
+    background-color: #f5f4f4;
     border-radius: 10px;
     text-align: center;
-    background-color: rgb(148, 145, 145);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.175);
 }
+/* display: flex;
+align-items: center;
+margin-bottom: 40px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+overflow: hidden; */
 
 .msg h2 {
     color: var(--primary-color);
