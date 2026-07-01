@@ -4,120 +4,169 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <title>Personal Trainer | Christian Guevara</title>
+    <meta
+      name="description"
+      content="Online and in-person personal training with Christian Guevara. Get a customized training program, weekly check-ins, and 1-on-1 coaching to reach your fitness goals."
+    />
+    <link rel="icon" type="image/png" href="assets/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/favicon-180.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      />
+    </noscript>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/temphero-960.webp"
+      imagesrcset="assets/temphero-640.webp 640w, assets/temphero-960.webp 960w, assets/temphero-1920.webp 1920w"
+      imagesizes="100vw"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <script src="js/components.js" defer></script>
   </head>
   <body>
-    <div id="content">
-      <header>
-        <a id="logo_link" href="index.html">
-          <img class="logo" src="assets/logo1.png" alt="Logo" />
-        </a>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="programs.html">Programs</a>
-          <a href="bookme.html">Book Me</a>
-        </nav>
-      </header>
+    <site-header></site-header>
 
-      <div id="hero">
-        <div id="hero-box">
-          <img id="hero-img" src="assets/temphero.jpg" alt="hero image" />
-        </div>
-        <section id="hero-msg">
-          <h1 class="home-title">Personal Trainer</h1>
-          <p>
-            Unlock Your Fitness Potential with Personalized Training Solutions
-          </p>
-        </section>
+    <section class="hero">
+      <picture class="hero-media">
+        <source
+          srcset="assets/temphero-640.webp 640w, assets/temphero-960.webp 960w, assets/temphero-1920.webp 1920w"
+          sizes="100vw"
+          type="image/webp"
+        />
+        <img
+          src="assets/temphero-960.jpg"
+          srcset="assets/temphero-640.jpg 640w, assets/temphero-960.jpg 960w, assets/temphero-1920.jpg 1920w"
+          sizes="100vw"
+          alt=""
+          width="1920"
+          height="1280"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </picture>
+      <div class="hero-content">
+        <h1>Personal Trainer</h1>
+        <p>
+          Unlock Your Fitness Potential with Personalized Training Solutions
+        </p>
+        <a class="hero-cta" href="bookme.html">Book Now</a>
       </div>
+    </section>
 
+    <div id="content">
       <main class="home-section">
-        <section class="book-card">
-          <img class="img-card" src="assets/temp1.jpg" alt="Coaching image" />
+        <section class="stats-strip">
+          <div class="stats-strip-inner">
+            <div class="stat">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Years Training</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1-on-1</span>
+              <span class="stat-label">Custom Programs</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Online</span>
+              <span class="stat-label">&amp; In-Person</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Weekly</span>
+              <span class="stat-label">Check-ins</span>
+            </div>
+          </div>
         </section>
-        <section class="book-content">
-          <h2>Personalized 1-on-1 Coaching</h2>
-          <p>
-            <strong
-              >Unlock Your Potential with Tailored Online Coaching.</strong
-            >
-          </p>
-          <p>
-            <strong>-</strong>
-            <em>Customized Training Programs.</em>
-          </p>
-          <p>
-            <strong>-</strong>
-            <em>Weekly Check-ins</em>
-          </p>
-          <p>
-            <strong>-</strong>
-            <em>Experience the power of personalized guidance.</em>
-          </p>
-          <p>
-            <strong>-</strong>
-            <em
-              >Connect with a supportive community of fellow fitness
-              enthusiasts.</em
-            >
-          </p>
-          <div class="button-box">
+
+        <section class="feature">
+          <div class="feature-media">
+            <picture>
+              <source srcset="assets/temp1.webp" type="image/webp" />
+              <img
+                src="assets/temp1.jpg"
+                alt="Christian coaching a client during a training session"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="feature-content">
+            <span class="eyebrow">Personalized Coaching</span>
+            <h2>Personalized 1-on-1 Coaching</h2>
+            <p>Unlock your potential with tailored online coaching.</p>
+            <ul class="feature-list">
+              <li>Customized training programs</li>
+              <li>Weekly check-ins</li>
+              <li>The power of personalized guidance</li>
+              <li>A supportive community of fellow fitness enthusiasts</li>
+            </ul>
             <a class="book" href="bookme.html">Book Now</a>
           </div>
         </section>
-        <section class="best">
-          <img
-            src="assets/bestversion.png"
-            alt="Become the best version of yourself image"
-          />
+
+        <section class="script-banner">
+          <h2 class="script-heading">Become the best version<br />of yourself</h2>
         </section>
-        <div id="aboutme"></div>
-        <section class="msg">
-          <h2>About Me</h2>
-          <p>
-            Hi, I'm Christian, an online and in-person fitness trainer. My
-            fitness journey began in my teens with a few YouTube videos, and
-            since then, I've been fascinated by the process of
-            transformation—both physical and mental. I believe everyone has the
-            potential to become their best self, and my mission is to inspire
-            others to achieve that change.
-          </p>
-          <p>
-            Starting without a coach, I relied on self-education and faced my
-            share of setbacks and injuries, which only fueled my passion to dive
-            deeper into fitness. Over the last seven years, I've studied workout
-            techniques, nutrition, and earned coursework in fitness and
-            nutrition during college.
-          </p>
-          <p>
-            Let me help you skip the trial and error and avoid injuries by
-            sharing what I've learned, so you can start your own fitness journey
-            with confidence.
-          </p>
-          <img
-            class="aboutme-img"
-            src="assets/photo2.jpg"
-            alt="Christian image"
-          />
+
+        <section class="about">
+          <div class="about-media">
+            <img
+              src="assets/photo2.jpg"
+              alt="Christian Guevara"
+              width="450"
+              height="338"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="about-content">
+            <span class="eyebrow">About Me</span>
+            <h2>Hi, I'm Christian</h2>
+            <p>
+              I'm an online and in-person fitness trainer. My fitness journey
+              began in my teens with a few YouTube videos, and since then,
+              I've been fascinated by the process of transformation, both
+              physical and mental. I believe everyone has the potential to
+              become their best self, and my mission is to inspire others to
+              achieve that change.
+            </p>
+            <p>
+              Starting without a coach, I relied on self-education and faced
+              my share of setbacks and injuries, which only fueled my passion
+              to dive deeper into fitness. Over the last eight years, I've
+              studied workout techniques, nutrition, and earned coursework in
+              fitness and nutrition during college.
+            </p>
+            <p>
+              Let me help you skip the trial and error and avoid injuries by
+              sharing what I've learned, so you can start your own fitness
+              journey with confidence.
+            </p>
+          </div>
         </section>
       </main>
 
-      <footer>
-        <h3>Christian Guevara &copy; 2025</h3>
-        <h3><a href="bookme.html">Book Me</a></h3>
-        <div class="social">
-          <a href="https://facebook.com" target="_blank">
-            <img src="assets/fb.png" alt="facebook icon" />
-          </a>
-          <a href="https://instagram.com" target="_blank">
-            <img src="assets/instagram_icon.png" alt="instagram icon" />
-          </a>
-          <a href="https://twitter.com" target="_blank">
-            <img src="assets/tw.png" alt="twitter icon" />
-          </a>
-        </div>
-      </footer>
+      <section class="final-cta">
+        <h2>Ready to start your transformation?</h2>
+        <p>Book your first session and let's get to work.</p>
+        <a class="cta-btn" href="bookme.html">Book Now</a>
+      </section>
     </div>
+
+    <site-footer></site-footer>
   </body>
 </html>

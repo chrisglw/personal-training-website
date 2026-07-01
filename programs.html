@@ -3,95 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programs</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f8f9fa;
-        color: #333;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      .program {
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-      }
-
-      .program img {
-        width: 40%;
-        height: auto;
-        object-fit: cover;
-      }
-
-      .program-content {
-        padding: 20px;
-      }
-
-      .program-content h2 {
-        margin-top: 0;
-        font-size: 1.8rem;
-        color: Black;
-      }
-
-      .program-content p {
-        margin: 10px 0;
-        font-size: 1rem;
-        line-height: 1.5;
-      }
-
-      .book-now {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-      }
-
-      .book-now a {
-        text-decoration: none;
-        background-color: black;
-        color: #fff;
-        padding: 15px 30px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-      }
-
-      .book-now a:hover {
-        color: red;
-      }
-    </style>
+    <title>Training Programs | Christian Guevara</title>
+    <meta
+      name="description"
+      content="Explore online and in-person personal training programs with Christian Guevara, available remotely or in the Rexburg area."
+    />
+    <link rel="icon" type="image/png" href="assets/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/favicon-180.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      />
+    </noscript>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="js/components.js" defer></script>
   </head>
   <body>
-    <div id="content">
-      <header>
-        <a id="logo_link" href="index.html">
-          <img class="logo" src="assets/logo1.png" alt="Logo" />
-        </a>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="programs.html">Programs</a>
-          <a href="bookme.html">Book Me</a>
-        </nav>
-      </header>
+    <site-header></site-header>
 
+    <div id="content">
       <main>
-        <div class="container">
-          <!-- Online Training Program -->
+        <h1 class="page-title">Training Programs</h1>
+        <p class="programs-intro">
+          Whether you train from home or in person, every program is built
+          around your goals, your schedule, and where you're starting from.
+        </p>
+        <div class="programs">
           <div class="program">
-            <img src="assets/Onlinetest.jpg" alt="Online Training" />
+            <div class="program-media">
+              <picture>
+                <source srcset="assets/Onlinetest.webp" type="image/webp" />
+                <img
+                  src="assets/Onlinetest.jpg"
+                  alt="Online training session on a laptop"
+                  width="960"
+                  height="768"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
             <div class="program-content">
               <h2>Online Training</h2>
               <p>
@@ -99,44 +59,52 @@
                 your home. Access a wide range of resources, live sessions, and
                 support to help you achieve your goals.
               </p>
+              <ul class="feature-list">
+                <li>Custom programming built around your equipment</li>
+                <li>Form checks and feedback through video</li>
+                <li>Direct messaging support between sessions</li>
+              </ul>
             </div>
           </div>
 
-          <!-- In-Person Training Program -->
           <div class="program">
-            <img src="assets/photo3.jpg" alt="In-Person Training" />
+            <div class="program-media">
+              <picture>
+                <source srcset="assets/photo3.webp" type="image/webp" />
+                <img
+                  src="assets/photo3.jpg"
+                  alt="In-person training session with Christian"
+                  width="960"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
             <div class="program-content">
               <h2>In-Person Training</h2>
               <p>
                 If you're in the Rexburg area, join me for in-person training
-                sessions—I'll be with you every step of the way, guiding you
+                sessions. I'll be with you every step of the way, guiding you
                 through each rep.
               </p>
+              <ul class="feature-list">
+                <li>Hands-on coaching and form correction</li>
+                <li>Sessions in the Rexburg, ID area</li>
+                <li>Flexible scheduling around your week</li>
+              </ul>
             </div>
-          </div>
-
-          <!-- Book Now Button -->
-          <div class="book-now">
-            <a href="bookme.html">Book Now</a>
           </div>
         </div>
       </main>
 
-      <footer>
-        <h3>Christian Guevara &copy; 2025</h3>
-        <h3><a href="bookme.html">Book Me</a></h3>
-        <div class="social">
-          <a href="https://facebook.com" target="_blank">
-            <img src="assets/fb.png" alt="facebook icon" />
-          </a>
-          <a href="https://instagram.com" target="_blank">
-            <img src="assets/instagram_icon.png" alt="instagram icon" />
-          </a>
-          <a href="https://twitter.com" target="_blank">
-            <img src="assets/tw.png" alt="twitter icon" />
-          </a>
-        </div>
-      </footer>
+      <section class="final-cta">
+        <h2>Ready to pick your path?</h2>
+        <p>Book now and let's get started.</p>
+        <a class="cta-btn" href="bookme.html">Book Now</a>
+      </section>
     </div>
+
+    <site-footer></site-footer>
   </body>
 </html>
